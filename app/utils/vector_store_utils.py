@@ -1,23 +1,17 @@
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_community.vectorstores import Chroma
+from langchain_community.vectorstores.chroma import Chroma
 from langchain_openai import OpenAIEmbeddings
 
 
-def get_text_chunks(text):
-    text_splitter = RecursiveCharacterTextSplitter(
-        separator="\n", chunk_size=1000, chunk_overlap=200, length_function=len
-    )
-    chunks = text_splitter.split_text(text)
-    return chunks
+class MyVectorStore:
+    def __init__(self):
+        pass
 
+    def embed_text_and_return_vectorstore(self, text_chunks):
+        embeddings = OpenAIEmbeddings()
+        vectorstore = Chroma.from_texts(text_chunks, embeddings)
 
-def get_vectorstore(text_chunks):
-    embeddings = OpenAIEmbeddings()
-    vectorstore = Chroma.from_documents(text_chunks, embeddings)
+        return vectorstore
 
-    return vectorstore
-
-
-def get_retriever(vectorstore):
-    retriever = vectorstore.as_retriever(search_kwargs={"k": 2})
-    return retriever
+    def get_retriever(self, vectorstore):
+        retriever = vectorstore.as_retriever(search_kwargs={"k": 2})
+        return retriever
