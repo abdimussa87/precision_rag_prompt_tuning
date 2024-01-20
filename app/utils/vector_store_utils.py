@@ -1,16 +1,6 @@
-from PyPDF2 import PdfReader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
 from langchain_openai import OpenAIEmbeddings
-
-
-def get_pdf_text(pdf_docs):
-    text = ""
-    for pdf in pdf_docs:
-        pdf_reader = PdfReader(pdf)
-        for page in pdf_reader.pages:
-            text += page.extract_text()
-    return text
 
 
 def get_text_chunks(text):
@@ -21,9 +11,9 @@ def get_text_chunks(text):
     return chunks
 
 
-def get_vectorstore(chunked_docs, text_chunks):
+def get_vectorstore(text_chunks):
     embeddings = OpenAIEmbeddings()
-    vectorstore = Chroma.from_documents(chunked_docs, embeddings)
+    vectorstore = Chroma.from_documents(text_chunks, embeddings)
 
     return vectorstore
 
