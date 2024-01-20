@@ -1,13 +1,6 @@
 import streamlit as st
 from dotenv import load_dotenv
-from PyPDF2 import PdfReader
-from langchain.text_splitter import CharacterTextSplitter
-from langchain_openai import OpenAIEmbeddings
-from langchain_community.vectorstores import FAISS
-from langchain_openai import ChatOpenAI
-from langchain.memory import ConversationBufferMemory
-from langchain.chains import ConversationalRetrievalChain
-from htmlTemplates import css, bot_template, user_template
+from htmlTemplates import css, bot_template
 
 from utils.pdf_utils import MyPDF
 from utils.text_splitter_utils import MyTextSplitter
@@ -34,19 +27,13 @@ def handle_userinput(user_question):
     )
     prompts_generated = json.loads(result["response"].content)
 
-    for i, message in enumerate(prompts_generated):
-        if i % 2 == 0:
-            st.write(
-                user_template.replace("{{MSG}}", message),
-                unsafe_allow_html=True,
-            )
-        else:
-            st.write(bot_template.replace("{{MSG}}", message), unsafe_allow_html=True)
+    for message in prompts_generated:
+        st.write(bot_template.replace("{{MSG}}", message), unsafe_allow_html=True)
 
 
 def main():
     load_dotenv()
-    st.set_page_config(page_title="Optimized Prompts", page_icon=":robot:")
+    st.set_page_config(page_title="Optimized Prompts", page_icon="🤖")
     st.write(css, unsafe_allow_html=True)
 
     if "conversation" not in st.session_state:
@@ -54,7 +41,7 @@ def main():
     if "chat_history" not in st.session_state:
         st.session_state.chat_history = None
 
-    st.header("Get optimized prompts :robot:")
+    st.header("Get optimized prompts 🤖")
     user_question = st.text_input("State your objective:")
     if user_question:
         handle_userinput(user_question)
