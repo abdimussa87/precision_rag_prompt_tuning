@@ -1,0 +1,77 @@
+question,context,ground_truth
+What is the focus of the paper 'A Survey on Retrieval-Augmented Text Generation'?,"A Survey on Retrieval-Augmented Text Generation
+Huayang Li♥,∗
+Yixuan Su♠,∗
+Deng Cai♦,∗
+Yan Wang♣,∗
+Lemao Liu♣,∗
+♥Nara Institute of Science and Technology
+♠University of Cambridge
+♦The Chinese University of Hong Kong
+♣Tencent AI Lab","The focus of the paper 'A Survey on Retrieval-Augmented Text Generation' is to provide a comprehensive overview of the field of retrieval-augmented text generation, which has gained significant attention in the computational linguistics community. The paper highlights the generic paradigm of retrieval-augmented generation models, reviews notable approaches across various natural language processing tasks such as dialogue response generation and machine translation, and discusses the state-of-the-art performance achieved by these models. Additionally, the paper identifies and suggests important future research directions in this area."
+What is the title of the paper?,"Huayang Li♥,∗
+Yixuan Su♠,∗
+Deng Cai♦,∗
+Yan Wang♣,∗
+Lemao Liu♣,∗
+♥Nara Institute of Science and Technology
+♠University of Cambridge
+♦The Chinese University of Hong Kong
+♣Tencent AI Lab
+li.huayang.lh6@is.naist.jp, ys484@cam.ac.uk",The title of the paper is 'A Survey on Retrieval-Augmented Text Generation'.
+What is the main focus of this paper?,"Yan Wang♣,∗
+Lemao Liu♣,∗
+♥Nara Institute of Science and Technology
+♠University of Cambridge
+♦The Chinese University of Hong Kong
+♣Tencent AI Lab
+li.huayang.lh6@is.naist.jp, ys484@cam.ac.uk
+thisisjcykcd@gmail.com, brandenwang@tencent.com","The main focus of this paper is to conduct a survey on retrieval-augmented text generation, highlighting its advantages and state-of-the-art performance in various NLP tasks, reviewing notable approaches in tasks such as dialogue response generation and machine translation, and discussing future research directions."
+What is the topic of the paper 'A Survey on Retrieval-Augmented Text Generation'?,"♠University of Cambridge
+♦The Chinese University of Hong Kong
+♣Tencent AI Lab
+li.huayang.lh6@is.naist.jp, ys484@cam.ac.uk
+thisisjcykcd@gmail.com, brandenwang@tencent.com
+lemaoliu@gmail.com
+Abstract
+Recently, retrieval-augmented text generation","The topic of the paper 'A Survey on Retrieval-Augmented Text Generation' is the exploration and analysis of retrieval-augmented text generation methods in computational linguistics. It discusses the advantages of these methods over conventional generation models and their state-of-the-art performance in various NLP tasks. The paper reviews notable approaches to retrieval-augmented text generation, particularly in the context of dialogue response generation, machine translation, and other generation tasks, and suggests important future research directions."
+What is the focus of this paper?,"♣Tencent AI Lab
+li.huayang.lh6@is.naist.jp, ys484@cam.ac.uk
+thisisjcykcd@gmail.com, brandenwang@tencent.com
+lemaoliu@gmail.com
+Abstract
+Recently, retrieval-augmented text generation
+attracted increasing attention of the compu-","The focus of this paper is on retrieval-augmented text generation within the field of computational linguistics. It aims to provide a comprehensive survey of the paradigm, review notable approaches across various NLP tasks such as dialogue response generation and machine translation, and suggest important future research directions."
+What is the focus of this paper?,"thisisjcykcd@gmail.com, brandenwang@tencent.com
+lemaoliu@gmail.com
+Abstract
+Recently, retrieval-augmented text generation
+attracted increasing attention of the compu-
+tational linguistics community.
+Compared","The focus of this paper is on retrieval-augmented text generation within the field of computational linguistics. It aims to provide a survey of the current state of retrieval-augmented text generation, highlighting its advantages and reviewing notable approaches across various NLP tasks such as dialogue response generation, machine translation, and other generation tasks. The paper also identifies important future research directions in this area."
+What is the focus of this paper?,"lemaoliu@gmail.com
+Abstract
+Recently, retrieval-augmented text generation
+attracted increasing attention of the compu-
+tational linguistics community.
+Compared
+with conventional generation models, retrieval-","The focus of this paper is on retrieval-augmented text generation within the field of computational linguistics. It aims to provide a comprehensive survey of the current state-of-the-art retrieval-augmented generation models, their advantages, and their applications in various natural language processing tasks such as dialogue response generation, machine translation, and other generation tasks. Additionally, the paper discusses future research directions in this area."
+What is the purpose of this paper?,"Abstract
+Recently, retrieval-augmented text generation
+attracted increasing attention of the compu-
+tational linguistics community.
+Compared
+with conventional generation models, retrieval-
+augmented text generation has remarkable ad-","The purpose of this paper is to conduct a comprehensive survey on retrieval-augmented text generation, highlighting its advantages and state-of-the-art performance in various NLP tasks. The paper outlines the generic paradigm of retrieval-augmented generation, reviews notable approaches across different tasks such as dialogue response generation and machine translation, and suggests important future research directions in this field."
+What is the focus of this paper?,"attracted increasing attention of the compu-
+tational linguistics community.
+Compared
+with conventional generation models, retrieval-
+augmented text generation has remarkable ad-
+vantages and particularly has achieved state-of-","The focus of this paper is on retrieval-augmented text generation within the field of computational linguistics. It aims to provide a comprehensive survey of the paradigm, review notable approaches across various NLP tasks such as dialogue response generation and machine translation, and identify important future research directions."
+What is the focus of this paper?,"tational linguistics community.
+Compared
+with conventional generation models, retrieval-
+augmented text generation has remarkable ad-
+vantages and particularly has achieved state-of-
+the-art performance in many NLP tasks. This","The focus of this paper is on retrieval-augmented text generation within the field of computational linguistics. It aims to provide a comprehensive survey of the paradigm, review notable approaches across various NLP tasks such as dialogue response generation and machine translation, and identify important future research directions."
