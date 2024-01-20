@@ -19,3 +19,15 @@ def get_text_chunks(text):
     )
     chunks = text_splitter.split_text(text)
     return chunks
+
+
+def get_vectorstore(chunked_docs, text_chunks):
+    embeddings = OpenAIEmbeddings()
+    vectorstore = Chroma.from_documents(chunked_docs, embeddings)
+
+    return vectorstore
+
+
+def get_retriever(vectorstore):
+    retriever = vectorstore.as_retriever(search_kwargs={"k": 2})
+    return retriever
